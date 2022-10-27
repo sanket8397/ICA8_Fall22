@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc879427-9bbd-4bd5-9bc3-175d0ab02d6c" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/src/test/java/UrinalsTest.java" afterDir="false" />
+    <list default="true" id="fc879427-9bbd-4bd5-9bc3-175d0ab02d6c" name="Changes" comment="Added urninal.dat file not exist test case.">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/urinal.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/urinal.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ICA8_Fall22.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ICA8_Fall22.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Urinals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Urinals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Urinals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Urinals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UrinalsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UrinalsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +54,7 @@
       <recent name="test.java" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.UrinalsTest">
     <configuration name="UrinalsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ICA8_Fall22" />
       <extension name="coverage">
@@ -69,9 +70,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UrinalsTest.verifyUrinalDatFileExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ICA8_Fall22" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.java" />
+      <option name="MAIN_CLASS_NAME" value="test.java.UrinalsTest" />
+      <option name="METHOD_NAME" value="verifyUrinalDatFileExists" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UrinalsTest.whenUrinalDatFileNotExistsThenThrowFileNotFoundException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ICA8_Fall22" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.java" />
+      <option name="MAIN_CLASS_NAME" value="test.java.UrinalsTest" />
+      <option name="METHOD_NAME" value="whenUrinalDatFileNotExistsThenThrowFileNotFoundException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UrinalsTest" />
+        <item itemvalue="JUnit.UrinalsTest.verifyUrinalDatFileExists" />
+        <item itemvalue="JUnit.UrinalsTest.whenUrinalDatFileNotExistsThenThrowFileNotFoundException" />
       </list>
     </recent_temporary>
   </component>
@@ -98,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666892640457</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added urninal.dat file not exist test case.">
+      <created>1666911850009</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666911850009</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +156,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Added urninal.dat file not exist test case" />
+    <MESSAGE value="Added urninal.dat file not exist test case." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added urninal.dat file not exist test case." />
   </component>
 </project>

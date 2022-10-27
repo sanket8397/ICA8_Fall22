@@ -9,14 +9,19 @@ import java.util.Scanner;
  */
 public class Urinals {
 
-    public void readFile(){
-        File file = new File("resources/urinal.dat");
+    public void readFile(String fileName){
+        if (fileName.equals("")){
+            fileName = "src/main/resources/urinal.dat";
+        }
+        File file = new File(fileName);
         try {
             Scanner scanner = new Scanner(file);
+
         } catch (FileNotFoundException e) {
-            throw new RuntimeException("urinal.dat file does not exist");
+            throw new RuntimeException("File does not exist");
         }
     }
     public static void main(String[] args) {
+
     }
 }
