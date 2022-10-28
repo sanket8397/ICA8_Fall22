@@ -12,7 +12,9 @@ Solution:
 2. Main.java file is created to check final end to end code. 
 Input file is stored in main/java/resources/urinal.dat.
 Output get stores in main/java/Output/rule.txt.
-3. For testing purposes, input is stored in test/java/resources/urinal.dat.
+3. For testing purposes, 
+   Run src/test/java/Urinals tests.
+   Input is stored in test/java/resources/urinal.dat.
    Output get stores in test/java/Output/rule.txt.
 4. I replace goodString() function with verifyValidString() which uses regex to check valid string.
 
