@@ -111,10 +111,13 @@ public class Urinals {
     public void writetoOutput(String fileName){
         if (fileName.equals("")){
             fileName = "src/main/Output/rule.txt";
+            outputInitialString = "src/main/Output/rule";
         }
         File outputFile = new File(fileName);
+        int count = 1;
         while (outputFile.exists()) {
-            System.out.println("Logic is yet to be implemented");
+            outputFile = new File(outputInitialString + count + ".txt");
+            count++;
         }
         try {
             FileWriter writer = new FileWriter(outputFile);

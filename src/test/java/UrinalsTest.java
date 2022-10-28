@@ -7,6 +7,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -90,7 +92,9 @@ class UrinalsTest {
     }
 
     @Test
-    public void whenFileNotExistsThenCreateNewFile(){
+    public void whenFileNotExistsThenCreateNewFile() throws IOException {
+        File file = new File("src/test/Output/rule.txt");
+        Files.deleteIfExists(file.toPath());
         assertDoesNotThrow(() -> urinals.writetoOutput("src/test/Output/rule.txt"));
         System.out.println("====== Sanket Surendra Kapse == TEST SEVEN EXECUTED =======");
     }
@@ -101,4 +105,20 @@ class UrinalsTest {
         assertTrue(new File("src/test/Output/rule.txt").exists());
         System.out.println("====== Sanket Surendra Kapse == TEST EIGHT EXECUTED =======");
     }
+
+    @Test
+    public void whenFileExistsThenCreateNewFileWithNewName() throws IOException {
+        File outputFile = new File("src/test/Output/rule.txt");
+        urinals.outputInitialString = "src/test/Output/rule";
+        int count = 1;
+        while (outputFile.exists()) {
+            outputFile = new File(urinals.outputInitialString + count + ".txt");
+            Files.deleteIfExists(outputFile.toPath());
+            count++;
+        }
+        urinals.writetoOutput("src/test/Output/rule.txt");
+        assertTrue(new File("src/test/Output/rule1.txt").exists());
+        System.out.println("====== Sanket Surendra Kapse == TEST NINE EXECUTED =======");
+    }
+
 }
