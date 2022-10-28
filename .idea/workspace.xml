@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc879427-9bbd-4bd5-9bc3-175d0ab02d6c" name="Changes" comment="Implemented test and code to check if solution list is created as expected.">
+    <list default="true" id="fc879427-9bbd-4bd5-9bc3-175d0ab02d6c" name="Changes" comment="Implemented test and code to create a rule.txt file if not exists.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Urinals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Urinals.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/UrinalsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UrinalsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/urinal.dat" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/urinal.dat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +56,8 @@
       <recent name="test.java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UrinalsTest.whenFileNotExistsThenCreateNewFile">
-    <configuration name="UrinalsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UrinalsTest.verifyFileIsDuplicate">
+    <configuration name="UrinalsTest.verifyFileIsDuplicate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ICA8_Fall22" />
       <extension name="coverage">
         <pattern>
@@ -69,7 +67,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="test.java" />
       <option name="MAIN_CLASS_NAME" value="test.java.UrinalsTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="verifyFileIsDuplicate" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UrinalsTest.verifyFileIsDuplicate" />
         <item itemvalue="JUnit.UrinalsTest.whenFileNotExistsThenCreateNewFile" />
         <item itemvalue="JUnit.UrinalsTest.whenFileNotExistsThenThrowIONotFoundException" />
         <item itemvalue="JUnit.UrinalsTest.verifyGetSolutionWorksCorrectly" />
         <item itemvalue="JUnit.UrinalsTest.verifyFileWorksCorrectly" />
-        <item itemvalue="JUnit.UrinalsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666928407657</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Implemented test and code to create a rule.txt file if not exists.">
+      <created>1666932811258</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666932811258</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,6 +251,7 @@
     <MESSAGE value="Completed and corrected test for getting maximum urinals, and it's related code." />
     <MESSAGE value="Implemented emptyfile test." />
     <MESSAGE value="Implemented test and code to check if solution list is created as expected." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented test and code to check if solution list is created as expected." />
+    <MESSAGE value="Implemented test and code to create a rule.txt file if not exists." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented test and code to create a rule.txt file if not exists." />
   </component>
 </project>

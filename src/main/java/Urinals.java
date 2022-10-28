@@ -113,6 +113,9 @@ public class Urinals {
             fileName = "src/main/Output/rule.txt";
         }
         File outputFile = new File(fileName);
+        while (outputFile.exists()) {
+            System.out.println("Logic is yet to be implemented");
+        }
         try {
             FileWriter writer = new FileWriter(outputFile);
             for (int i : solution) {

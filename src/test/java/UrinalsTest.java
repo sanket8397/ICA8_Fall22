@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.io.File;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
@@ -91,5 +93,12 @@ class UrinalsTest {
     public void whenFileNotExistsThenCreateNewFile(){
         assertDoesNotThrow(() -> urinals.writetoOutput("src/test/Output/rule.txt"));
         System.out.println("====== Sanket Surendra Kapse == TEST SEVEN EXECUTED =======");
+    }
+
+    @Test
+    public void verifyFileIsDuplicate(){
+        urinals.writetoOutput("src/test/Output/rule.txt");
+        assertTrue(new File("src/test/Output/rule.txt").exists());
+        System.out.println("====== Sanket Surendra Kapse == TEST EIGHT EXECUTED =======");
     }
 }
