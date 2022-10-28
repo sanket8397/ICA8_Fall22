@@ -121,4 +121,18 @@ class UrinalsTest {
         System.out.println("====== Sanket Surendra Kapse == TEST NINE EXECUTED =======");
     }
 
+    @Test
+    public void verifyFinalOutput(){
+        try {
+            File file = new File("src/test/Output/rule.txt");
+            Files.deleteIfExists(file.toPath());
+            urinals.readFile("src/test/resources/urinal.dat");
+        } catch (EmptyInputFileException | IOException e) {
+            throw new RuntimeException(e);
+        }
+        urinals.getSolution();
+        urinals.outputInitialString = "src/test/Output/rule";
+        urinals.writetoOutput("src/test/Output/rule.txt");
+    }
+
 }

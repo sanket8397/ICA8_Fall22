@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc879427-9bbd-4bd5-9bc3-175d0ab02d6c" name="Changes" comment="Implemented test and code to verify file is duplicate.">
+    <list default="true" id="fc879427-9bbd-4bd5-9bc3-175d0ab02d6c" name="Changes" comment="Implemented test and code to create new file if it's already exists.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Urinals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Urinals.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/UrinalsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UrinalsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +56,7 @@
       <recent name="test.java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UrinalsTest">
+  <component name="RunManager" selected="JUnit.UrinalsTest.verifyFinalOutput">
     <configuration name="UrinalsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ICA8_Fall22" />
       <extension name="coverage">
@@ -84,6 +83,22 @@
       <option name="PACKAGE_NAME" value="test.java" />
       <option name="MAIN_CLASS_NAME" value="test.java.UrinalsTest" />
       <option name="METHOD_NAME" value="verifyFileIsDuplicate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UrinalsTest.verifyFinalOutput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ICA8_Fall22" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.java" />
+      <option name="MAIN_CLASS_NAME" value="test.java.UrinalsTest" />
+      <option name="METHOD_NAME" value="verifyFinalOutput" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,29 +136,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UrinalsTest.whenFileNotExistsThenThrowIONotFoundException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ICA8_Fall22" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.java" />
-      <option name="MAIN_CLASS_NAME" value="test.java.UrinalsTest" />
-      <option name="METHOD_NAME" value="whenFileNotExistsThenThrowIONotFoundException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UrinalsTest.verifyFinalOutput" />
         <item itemvalue="JUnit.UrinalsTest" />
         <item itemvalue="JUnit.UrinalsTest.whenFileExistsThenCreateNewFileWithNewName" />
         <item itemvalue="JUnit.UrinalsTest.whenFileNotExistsThenCreateNewFile" />
         <item itemvalue="JUnit.UrinalsTest.verifyFileIsDuplicate" />
-        <item itemvalue="JUnit.UrinalsTest.whenFileNotExistsThenThrowIONotFoundException" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666933526726</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Implemented test and code to create new file if it's already exists.">
+      <created>1666934209240</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1666934209240</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -267,6 +273,7 @@
     <MESSAGE value="Implemented test and code to check if solution list is created as expected." />
     <MESSAGE value="Implemented test and code to create a rule.txt file if not exists." />
     <MESSAGE value="Implemented test and code to verify file is duplicate." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented test and code to verify file is duplicate." />
+    <MESSAGE value="Implemented test and code to create new file if it's already exists." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented test and code to create new file if it's already exists." />
   </component>
 </project>
