@@ -73,5 +73,18 @@ class UrinalsTest {
         System.out.println("====== Sanket Surendra Kapse == TEST FOUR EXECUTED =======");
     }
 
+    @Test
+    public void verifyGetSolutionWorksCorrectly(){
+        try {
+            urinals.readFile("src/test/resources/urinalForTestGetSolution.dat");
+        } catch (EmptyInputFileException e) {
+            throw new RuntimeException(e);
+        }
+        urinals.getSolution();
+        Integer[] expected = {0,3,-1,2,-1,1};
+        Integer[] actual = urinals.solution.toArray(new Integer[0]);
+        assertArrayEquals(expected, actual);
+        System.out.println("====== Sanket Surendra Kapse == TEST SIX EXECUTED =======");
+    }
 
 }

@@ -13,6 +13,7 @@ import java.util.regex.Pattern;
 public class Urinals {
 
     public ArrayList<String> inputs = new ArrayList<>();
+    public ArrayList<Integer> solution = new ArrayList<Integer>();
     /**
      * Reads data from file
      * @param fileName Read from file fileName
@@ -93,10 +94,13 @@ public class Urinals {
         return count;
     }
 
-    public void writeToFile(){
+    /**
+     * Generate solution list for all inputs
+     */
+    public void getSolution(){
         for(String input: inputs){
             int temp = getMaximumFreeUrinals(input);
-            System.out.println(temp);
+            solution.add(temp);
         }
     }
 
