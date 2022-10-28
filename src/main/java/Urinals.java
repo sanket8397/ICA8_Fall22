@@ -2,6 +2,7 @@ package main.java;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -11,21 +12,28 @@ import java.util.regex.Pattern;
  */
 public class Urinals {
 
+    public ArrayList<String> inputs = new ArrayList<>();
     /**
      * Reads data from file
      * @param fileName Read from file fileName
      */
-    public void readFile(String fileName){
+    public void readFile(String fileName) throws EmptyInputFileException {
         if (fileName.equals("")){
             fileName = "src/main/resources/urinal.dat";
         }
         File file = new File(fileName);
         try {
             Scanner scanner = new Scanner(file);
-            System.out.println("Not yet implemented");
-
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                inputs.add(line.strip());
+            }
+            if (inputs.size() == 0)
+                throw new EmptyInputFileException(fileName + " is Empty");
         } catch (FileNotFoundException e) {
             throw new RuntimeException("File does not exist");
+        } catch (EmptyInputFileException e) {
+            throw e;
         }
     }
 
@@ -41,6 +49,10 @@ public class Urinals {
         return matcher1.find() & !matcher2.find();
     }
 
+    /**
+     * @param string Input String
+     * @return number of maximum free urinals
+     */
     public int getMaximumFreeUrinals(String string){
         if (!verifyValidString(string)){
             return -1;
@@ -78,9 +90,14 @@ public class Urinals {
                 s.setCharAt(i, '1');
             }
         }
-//        System.out.println(s);
-//        System.out.println("-----");
         return count;
+    }
+
+    public void writeToFile(){
+        for(String input: inputs){
+            int temp = getMaximumFreeUrinals(input);
+            System.out.println(temp);
+        }
     }
 
     public static void main(String[] args) {

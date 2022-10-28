@@ -1,5 +1,6 @@
 package test.java;
 
+import main.java.EmptyInputFileException;
 import main.java.Urinals;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -34,6 +35,16 @@ class UrinalsTest {
     }
 
     @Test
+    public void verifyEmptyUrinalDatFile(){
+        try {
+            urinals.readFile("src/test/resources/emptyUrinal.dat");
+        } catch (EmptyInputFileException e) {
+            assertTrue(true);
+        }
+        System.out.println("====== Sanket Surendra Kapse == TEST FIVE EXECUTED =======");
+    }
+
+    @Test
     public void verifyValidInputString(){
         assertFalse(urinals.verifyValidString("1111"));
         assertTrue(urinals.verifyValidString("10101"));
@@ -61,5 +72,6 @@ class UrinalsTest {
         assertEquals(1, urinals.getMaximumFreeUrinals("100010"));
         System.out.println("====== Sanket Surendra Kapse == TEST FOUR EXECUTED =======");
     }
+
 
 }
