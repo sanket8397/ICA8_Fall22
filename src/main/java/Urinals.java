@@ -2,6 +2,8 @@ package main.java;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.regex.Matcher;
@@ -13,7 +15,9 @@ import java.util.regex.Pattern;
 public class Urinals {
 
     public ArrayList<String> inputs = new ArrayList<>();
-    public ArrayList<Integer> solution = new ArrayList<Integer>();
+    public ArrayList<Integer> solution = new ArrayList<>();
+
+    public String outputInitialString;
     /**
      * Reads data from file
      * @param fileName Read from file fileName
@@ -102,6 +106,24 @@ public class Urinals {
             int temp = getMaximumFreeUrinals(input);
             solution.add(temp);
         }
+    }
+
+    public void writetoOutput(String fileName){
+        if (fileName.equals("")){
+            fileName = "src/main/Output/rule.txt";
+        }
+        File outputFile = new File(fileName);
+        try {
+            FileWriter writer = new FileWriter(outputFile);
+            for (int i : solution) {
+                writer.write(String.valueOf(i));
+                writer.write("\n");
+            }
+            writer.close();
+        } catch (IOException e) {
+            throw new RuntimeException("File does not exist");
+        }
+
     }
 
     public static void main(String[] args) {

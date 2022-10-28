@@ -87,4 +87,9 @@ class UrinalsTest {
         System.out.println("====== Sanket Surendra Kapse == TEST SIX EXECUTED =======");
     }
 
+    @Test
+    public void whenFileNotExistsThenCreateNewFile(){
+        assertDoesNotThrow(() -> urinals.writetoOutput("src/test/Output/rule.txt"));
+        System.out.println("====== Sanket Surendra Kapse == TEST SEVEN EXECUTED =======");
+    }
 }

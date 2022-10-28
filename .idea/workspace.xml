@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc879427-9bbd-4bd5-9bc3-175d0ab02d6c" name="Changes" comment="Implemented emptyfile test.">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/urinalForTestGetSolution.dat" afterDir="false" />
+    <list default="true" id="fc879427-9bbd-4bd5-9bc3-175d0ab02d6c" name="Changes" comment="Implemented test and code to check if solution list is created as expected.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Urinals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Urinals.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/UrinalsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UrinalsTest.java" afterDir="false" />
@@ -59,7 +58,7 @@
       <recent name="test.java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UrinalsTest.verifyGetSolutionWorksCorrectly">
+  <component name="RunManager" selected="JUnit.UrinalsTest.whenFileNotExistsThenCreateNewFile">
     <configuration name="UrinalsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ICA8_Fall22" />
       <extension name="coverage">
@@ -75,22 +74,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UrinalsTest.verifyEmptyUrinalDatFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ICA8_Fall22" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.java" />
-      <option name="MAIN_CLASS_NAME" value="test.java.UrinalsTest" />
-      <option name="METHOD_NAME" value="verifyEmptyUrinalDatFile" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UrinalsTest.verifyFileWorksCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ICA8_Fall22" />
       <extension name="coverage">
@@ -102,22 +85,6 @@
       <option name="PACKAGE_NAME" value="test.java" />
       <option name="MAIN_CLASS_NAME" value="test.java.UrinalsTest" />
       <option name="METHOD_NAME" value="verifyFileWorksCorrectly" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UrinalsTest.verifyGetMaximumFreeUrinals (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ICA8_Fall22" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.java" />
-      <option name="MAIN_CLASS_NAME" value="test.java.UrinalsTest" />
-      <option name="METHOD_NAME" value="verifyGetMaximumFreeUrinals" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,13 +106,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UrinalsTest.whenFileNotExistsThenCreateNewFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ICA8_Fall22" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.java" />
+      <option name="MAIN_CLASS_NAME" value="test.java.UrinalsTest" />
+      <option name="METHOD_NAME" value="whenFileNotExistsThenCreateNewFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UrinalsTest.whenFileNotExistsThenThrowIONotFoundException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ICA8_Fall22" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.java" />
+      <option name="MAIN_CLASS_NAME" value="test.java.UrinalsTest" />
+      <option name="METHOD_NAME" value="whenFileNotExistsThenThrowIONotFoundException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UrinalsTest.whenFileNotExistsThenCreateNewFile" />
+        <item itemvalue="JUnit.UrinalsTest.whenFileNotExistsThenThrowIONotFoundException" />
         <item itemvalue="JUnit.UrinalsTest.verifyGetSolutionWorksCorrectly" />
         <item itemvalue="JUnit.UrinalsTest.verifyFileWorksCorrectly" />
         <item itemvalue="JUnit.UrinalsTest" />
-        <item itemvalue="JUnit.UrinalsTest.verifyEmptyUrinalDatFile" />
-        <item itemvalue="JUnit.UrinalsTest.verifyGetMaximumFreeUrinals (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666927511618</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Implemented test and code to check if solution list is created as expected.">
+      <created>1666928407657</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666928407657</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -238,6 +244,7 @@
     <MESSAGE value="Update test for getting maximum urinals, and it's related code for counting 1's in string." />
     <MESSAGE value="Completed and corrected test for getting maximum urinals, and it's related code." />
     <MESSAGE value="Implemented emptyfile test." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented emptyfile test." />
+    <MESSAGE value="Implemented test and code to check if solution list is created as expected." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented test and code to check if solution list is created as expected." />
   </component>
 </project>
