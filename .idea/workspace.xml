@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc879427-9bbd-4bd5-9bc3-175d0ab02d6c" name="Changes" comment="Updated README.md file.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="fc879427-9bbd-4bd5-9bc3-175d0ab02d6c" name="Changes" comment="Updated workspace.xml file." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,6 +63,20 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UrinalsTest (1)" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.java" />
+      <option name="MAIN_CLASS_NAME" value="test.java.UrinalsTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -135,10 +147,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UrinalsTest" />
+        <item itemvalue="JUnit.UrinalsTest (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.UrinalsTest" />
         <item itemvalue="JUnit.UrinalsTest.verifyBadOutputFileName" />
-        <item itemvalue="JUnit.UrinalsTest.verifyFinalOutput" />
       </list>
     </recent_temporary>
   </component>
@@ -277,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666937978785</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Updated workspace.xml file.">
+      <created>1666938760241</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1666938760241</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -309,6 +328,7 @@
     <MESSAGE value="Implemented test for bad output file name." />
     <MESSAGE value="Main class is created for final testing purpose." />
     <MESSAGE value="Updated README.md file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md file." />
+    <MESSAGE value="Updated workspace.xml file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated workspace.xml file." />
   </component>
 </project>
