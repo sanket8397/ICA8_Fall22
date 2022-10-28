@@ -37,8 +37,6 @@ public class Urinals {
                 throw new EmptyInputFileException(fileName + " is Empty");
         } catch (FileNotFoundException e) {
             throw new RuntimeException("File does not exist");
-        } catch (EmptyInputFileException e) {
-            throw e;
         }
     }
 
@@ -108,10 +106,17 @@ public class Urinals {
         }
     }
 
-    public void writetoOutput(String fileName){
+    /**
+     * Wrire output to output file in Output directory
+     * @param fileName Output file name expected
+     */
+    public void writetoOutput(String fileName) throws BadFileNameException {
         if (fileName.equals("")){
             fileName = "src/main/Output/rule.txt";
             outputInitialString = "src/main/Output/rule";
+        }
+        if (!fileName.contains("rule")){
+            throw new BadFileNameException("Output file name doesn't contains rule in it.");
         }
         File outputFile = new File(fileName);
         int count = 1;

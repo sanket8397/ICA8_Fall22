@@ -1,7 +1,9 @@
 package test.java;
 
+import main.java.BadFileNameException;
 import main.java.EmptyInputFileException;
 import main.java.Urinals;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -100,14 +102,14 @@ class UrinalsTest {
     }
 
     @Test
-    public void verifyFileIsDuplicate(){
+    public void verifyFileIsDuplicate() throws BadFileNameException {
         urinals.writetoOutput("src/test/Output/rule.txt");
         assertTrue(new File("src/test/Output/rule.txt").exists());
         System.out.println("====== Sanket Surendra Kapse == TEST EIGHT EXECUTED =======");
     }
 
     @Test
-    public void whenFileExistsThenCreateNewFileWithNewName() throws IOException {
+    public void whenFileExistsThenCreateNewFileWithNewName() throws IOException, BadFileNameException {
         File outputFile = new File("src/test/Output/rule.txt");
         urinals.outputInitialString = "src/test/Output/rule";
         int count = 1;
@@ -122,7 +124,17 @@ class UrinalsTest {
     }
 
     @Test
-    public void verifyFinalOutput(){
+    public void verifyBadOutputFileName(){
+        try {
+            urinals.writetoOutput("src/test/Output/abc.txt");
+        } catch (BadFileNameException e) {
+            assertTrue(true);
+        }
+        System.out.println("====== Sanket Surendra Kapse == TEST TEN EXECUTED =======");
+    }
+
+    @Test
+    public void verifyFinalOutput() throws BadFileNameException {
         try {
             File file = new File("src/test/Output/rule.txt");
             Files.deleteIfExists(file.toPath());
@@ -133,6 +145,13 @@ class UrinalsTest {
         urinals.getSolution();
         urinals.outputInitialString = "src/test/Output/rule";
         urinals.writetoOutput("src/test/Output/rule.txt");
+        System.out.println("====== Sanket Surendra Kapse == TEST ELEVEN EXECUTED =======");
+    }
+
+    @AfterAll
+    public static void clean() throws IOException {
+        File file = new File("null1.txt");
+        Files.deleteIfExists(file.toPath());
     }
 
 }
