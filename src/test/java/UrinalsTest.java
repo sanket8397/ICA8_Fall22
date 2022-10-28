@@ -46,4 +46,14 @@ class UrinalsTest {
         System.out.println("====== Sanket Surendra Kapse == TEST THREE EXECUTED =======");
     }
 
+    @Test
+    public void verifyGetMaximumFreeUrinals(){
+
+        assertEquals(-1, urinals.getMaximumFreeUrinals("abc"));
+        assertEquals(-1, urinals.getMaximumFreeUrinals("1111"));
+        assertEquals(-1, urinals.getMaximumFreeUrinals("010100101001010010101"));
+        assertEquals(-1, urinals.getMaximumFreeUrinals("12345"));
+        System.out.println("====== Sanket Surendra Kapse == TEST FOUR EXECUTED =======");
+    }
+
 }

@@ -22,6 +22,7 @@ public class Urinals {
         File file = new File(fileName);
         try {
             Scanner scanner = new Scanner(file);
+            System.out.println("Not yet implemented");
 
         } catch (FileNotFoundException e) {
             throw new RuntimeException("File does not exist");
@@ -40,6 +41,13 @@ public class Urinals {
         return matcher1.find() & !matcher2.find();
     }
 
+    public int getMaximumFreeUrinals(String s){
+        if (!verifyValidString(s)){
+            return -1;
+        }
+        System.out.println("Not yet implemented");
+        return 0;
+    }
     public static void main(String[] args) {
 
     }
