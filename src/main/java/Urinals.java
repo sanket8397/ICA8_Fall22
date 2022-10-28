@@ -41,13 +41,48 @@ public class Urinals {
         return matcher1.find() & !matcher2.find();
     }
 
-    public int getMaximumFreeUrinals(String s){
-        if (!verifyValidString(s)){
+    public int getMaximumFreeUrinals(String string){
+        if (!verifyValidString(string)){
             return -1;
         }
-        System.out.println("Not yet implemented");
-        return 0;
+        StringBuilder s = new StringBuilder(string);
+        int count = 0;
+        if(s.length() == 1) {
+            if (s.charAt(0) == '0') {
+                return 1;
+            }
+        }
+        if(s.length() == 2) {
+            if ((s.charAt(0) == '0') & (s.charAt(1) == '0')) {
+                return 1;
+            }
+        }
+        if (s.charAt(0) == '0'){
+            if (s.charAt(1) == '0'){
+                s.setCharAt(0, '1');
+                count++;
+            }
+        }
+        int i;
+        for (i = 1; i < s.length() - 1; i++){
+            if (s.charAt(i) == '0'){
+                if ((s.charAt(i-1) == '0') & (s.charAt(i+1) == '0')){
+                    count = count+1;
+                    s.setCharAt(i, '1');
+                }
+            }
+        }
+        if (s.charAt(s.length() - 1) == '0'){
+            if (s.charAt(s.length() - 2) == '0'){
+                count++;
+                s.setCharAt(i, '1');
+            }
+        }
+//        System.out.println(s);
+//        System.out.println("-----");
+        return count;
     }
+
     public static void main(String[] args) {
 
     }
