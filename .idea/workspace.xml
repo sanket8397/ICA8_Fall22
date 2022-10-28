@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc879427-9bbd-4bd5-9bc3-175d0ab02d6c" name="Changes" comment="Implemented test for end to end implementation.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/BadFileNameException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Urinals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Urinals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UrinalsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UrinalsTest.java" afterDir="false" />
+    <list default="true" id="fc879427-9bbd-4bd5-9bc3-175d0ab02d6c" name="Changes" comment="Implemented test for bad output file name.">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666935263797</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Implemented test for bad output file name.">
+      <created>1666937005165</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1666937005166</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -284,6 +288,7 @@
     <MESSAGE value="Implemented test and code to verify file is duplicate." />
     <MESSAGE value="Implemented test and code to create new file if it's already exists." />
     <MESSAGE value="Implemented test for end to end implementation." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented test for end to end implementation." />
+    <MESSAGE value="Implemented test for bad output file name." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented test for bad output file name." />
   </component>
 </project>
